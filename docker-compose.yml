@@ -1,0 +1,8 @@
+services:
+  mongo:
+    image: mongo:5
+    restart: always
+    command: mongod
+    volumes:
+      - "${PWD}/data:/data/db"
+      - "${PWD}/tmp:/tmp2"
